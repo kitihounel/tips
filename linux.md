@@ -1,6 +1,7 @@
 # Linux
 
 - [Filesystem](#fs)
+- [Network](#network)
 
 ## fs
 
@@ -11,3 +12,12 @@ du -d 0 -h /path/to/dir
 ```
 
 There is also a graphical tool named `baobab` that does the same.
+
+## Network
+
+### Enable or disable a network interface
+
+```
+ifconfig <interface> down # disable
+ifconfig <interface> up   # enable
+```

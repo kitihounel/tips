@@ -19,6 +19,32 @@ select * from pg_stat_activity where datname = 'dbname';
 
 Source: https://stackoverflow.com/questions/27435839/how-to-list-active-connections-on-postgresql
 
+### List installed extensions in a db
+
+```sh
+\dx
+```
+
+Or
+
+```sql
+select * from pg_extension;
+```
+
+To see all available extensions on the server:
+
+```sql
+select * from pg_available_extensions;
+```
+
+## Enable UUID extension
+
+```sql
+create extension if not exists "uuid-ossp";
+```
+
+This will give you access to functions `uuid_generate_v4()` and `uuid_generate_v1()`.
+
 ## Queries
 
 ### Estimation of the number of rows in a table
