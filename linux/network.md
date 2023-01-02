@@ -1,11 +1,11 @@
 # Network
 
 - [Enable or disable a network interface](#enable-or-disable-a-network-interface)
-- [DNS ](#dns)
+- [DNS](#dns)
 
 ## Enable or disable a network interface
 
-```
+```sh
 ifconfig <interface> down # disable
 ifconfig <interface> up   # enable
 ```
