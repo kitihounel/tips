@@ -4,7 +4,7 @@
 
 ## Disk usage of a directory
 
-```
+```sh
 du -d 0 -h /path/to/dir
 ```
 
