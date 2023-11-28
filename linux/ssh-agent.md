@@ -100,7 +100,9 @@ Add the following at the beginning of your `config` file.
 AddKeysToAgent yes
 ```
 
-See [here](https://man.openbsd.org/ssh_config.5#AddKeysToAgent) for more details.
+There are other values for the `AddKeysToAgent` that offer more security if you are maniac. See tha man pages
+[here](https://man.openbsd.org/ssh_config.5#AddKeysToAgent) for more details. You can also check the Ubuntu man pages
+for [more](https://manpages.ubuntu.com/manpages/trusty/en/man5/sshd_config.5.html). 
 
 ## Manage multiple SSH keys
 
