@@ -92,6 +92,16 @@ ssh-add -l
 ssh-add -D
 ```
 
+## Enter SSH passphrase once
+
+Add the following at the beginning of your `config` file.
+
+```
+AddKeysToAgent confirm
+```
+
+See [here](https://man.openbsd.org/ssh_config.5#AddKeysToAgent) for more details.
+
 ## Manage multiple SSH keys
 
 Though it's considered good practice to have only one public-private key pair per device, sometimes you need to use
