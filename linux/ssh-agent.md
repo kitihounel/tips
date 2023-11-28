@@ -97,7 +97,7 @@ ssh-add -D
 Add the following at the beginning of your `config` file.
 
 ```
-AddKeysToAgent confirm
+AddKeysToAgent yes
 ```
 
 See [here](https://man.openbsd.org/ssh_config.5#AddKeysToAgent) for more details.
