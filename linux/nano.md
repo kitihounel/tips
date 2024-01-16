@@ -29,7 +29,7 @@ set tabstospaces
 If you already got a file with tabs and want to convert them to spaces i recommend the **expand** command (shell):
 
 ```bash
-expand -4 input.py > output.py
+expand --tabs=4 input.py > output.py
 ```
 
 [Source](https://stackoverflow.com/questions/11173769/how-to-make-the-tab-character-4-spaces-instead-of-8-spaces-in-nano).
