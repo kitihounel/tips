@@ -38,13 +38,13 @@ function saveInput() {
   console.log('Saving data')
 }
 
-const processChange = debounce(() => saveInput())
+const processChange = debounce(saveInput)
 ```
 
 Here is an usage with `react-select` to load suggestions when user types in.
 
 ```jsx
-import Select from "react-select/async";
+import Select from "react-select/async"
 
 export default function MyComponent() {
   const debounce = (fn, timeout = 600) => {
