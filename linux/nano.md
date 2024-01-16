@@ -11,6 +11,10 @@ The *nanorc* file contains the default settings for **nano**. The file should be
 
 [Source](https://www.nano-editor.org/dist/v2.9/nanorc.5.html).
 
+## Cheatsheet
+
+The official cheatsheet is available [here](https://www.nano-editor.org/dist/latest/cheatsheet.html).
+
 ## Show line numbers
 
 ```
