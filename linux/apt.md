@@ -7,3 +7,5 @@
 ```sh
 apt list --installed
 ```
+
+Source: https://askubuntu.com/questions/17823/how-to-list-all-installed-packages
