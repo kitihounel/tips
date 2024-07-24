@@ -2,7 +2,27 @@
 
 The content of this document comes from [devhints](https://devhints.io). The GitHub repository is [here](https://github.com/rstacruz/cheatsheets).
 
-## Connect to server
+## Summary
+
+- [Connect to Server](#connect-to-server)
+- [Browsing](#browsing)
+- [Select](#select)
+- [Select - Join](#select---join)
+- [Conditions](#conditions)
+- [Create / Open / Delete Database](#create--open--delete-database)
+- [Backup Database to SQL File](#backup-database-to-sql-file)
+- [Restore from backup SQL File](#restore-from-backup-sql-file)
+- [Repair Tables After Unclean Shutdown](#repair-tables-after-unclean-shutdown)
+- [Insert](#insert)
+- [Delete](#delete)
+- [Update](#update)
+- [Create / Delete / Modify Table](#create--delete--modify-table)
+- [Keys](#keys)
+- [Users and Privileges](#users-and-privileges)
+- [Main Data Types](#main-data-types)
+- [Reset Root Password](#reset-root-password)
+
+## Connect to Server
 
 ```bash
 # Host (-h) and port (-p) are optional and default to the values below.
