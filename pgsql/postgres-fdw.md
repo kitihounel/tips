@@ -42,13 +42,13 @@ The server is named `pg-fdw`. The db is named `fdw`.
     CREATE EXTENSION IF NOT EXISTS postgres_fdw;
     ```
 
-2. Create the source server
+2. Create the source server.
 
     ```sql
     CREATE SERVER fdw_server FOREIGN DATA WRAPPER postgres_fdw OPTIONS (host 'host.docker.internal', dbname 'mvcc', port '15432');
     ```
 
-3. Grant usage on the server to the admin user.
+3. Grant usage on the extension and server to the admin user.
 
     ```sql
     GRANT USAGE ON FOREIGN SERVER fdw_server TO admin;
