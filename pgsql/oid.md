@@ -3,6 +3,7 @@
 ## Official doc
 
 - Dedicated page in PgSQL [doc](https://www.postgresql.org/docs/current/datatype-oid.html).
+- Sqlines [article](https://www.sqlines.com/postgresql/oid).
 
 ## Get table OID
 

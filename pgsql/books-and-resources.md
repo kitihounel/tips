@@ -15,6 +15,8 @@ We put here links to various resources about PostgreSQL.
 
 - [CYBERTEC PostgreSQL Blog](https://www.cybertec-postgresql.com/en/blog/),
   articles and tips by PostgreSQL experts.
+- DBI [blog](https://www.dbi-services.com/blog).
+- Sqlines  [blog](https://www.sqlines.com/postgresql) on PgSQL.
 - [How to use PostgreSQL system catalogs](https://coderpad.io/blog/development/postgresql-system-catalogs-metadata/)
 - [10 useful PostgreSQL extensions](https://airbyte.com/data-engineering-resources/postgresql-extensions)
 
