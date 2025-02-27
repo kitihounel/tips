@@ -49,6 +49,27 @@ You'll need to add them again before you can commit them again.
 
 More explanations [here](https://stackoverflow.com/a/927386).
 
+### Hard reset
+
+This will destroy any local modifications. **Don't do it if you have uncommitted work you want to keep**.
+
+```bash
+git reset --hard 0d1d7fc3 # Replace the commit hash by the one you want to rollback to
+```
+
+Alternatively, if there's work to keep:
+
+```bash
+git stash
+git reset --hard 0d1d7fc3 # Replace the commit hash by the one you want to rollback to
+git stash pop
+```
+
+This saves the modifications, then reapplies that patch after resetting. You could get merge conflicts,
+if you've modified things which were changed since the commit you reset to.
+
+Source: [SO](https://stackoverflow.com/a/4114122).
+
 ### Revert a Git repository to a previous commit
 
 ```bash
