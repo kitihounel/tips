@@ -5,6 +5,7 @@
 - [Push only specific commits](#push-only-specific-commits)
 - [Fetch a remote branch](#fetch-a-remote-branch)
 - [Using the stash](#using-the-stash)
+- [Search in commit messages](#search-in-commit-messages)
 
 ## Beginner guides
 
@@ -206,4 +207,12 @@ $ git stash pop
 
 ```bash
 $ git stash clear
+```
+
+## Search in commit messages
+
+If you need to search for a commit which messages contains a given text, use:
+
+```bash
+$ git log --grep='pattern'
 ```
