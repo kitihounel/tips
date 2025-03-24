@@ -216,3 +216,5 @@ If you need to search for a commit which messages contains a given text, use:
 ```bash
 $ git log --grep='pattern'
 ```
+
+**Note:** This will only search in the history of the active branch.
