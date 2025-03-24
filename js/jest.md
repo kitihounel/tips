@@ -1,17 +1,20 @@
 # jest
 
+- [Map src directory in jest config using package.json](#map-src-directory-in-jest-config-using-packagejson)
+- [Select tests to run](#select-tests-to-run)
+
 ## Map src directory in jest config using package.json
 
 Nice and concise import statements like this:
 
 ```typescript
-@import { FooService } from 'src/core/foo.service';
+import { FooService } from 'src/core/foo.service';
 ```
 
 are more readable than the ones that look like this:
 
 ```typescript
-@import { FooService } from '../../../../core/foo.service';
+import { FooService } from '../../../../core/foo.service';
 ```
 
 The first option compiles fine when building, but fails when running Jest.
@@ -47,6 +50,12 @@ The issue thread is on [Github](https://github.com/nestjs/nest/issues/4953).
 
 #### IMPORTANT
 
-According to the author of NestJs, using absolute imports with `src` included
-is not recommended and is considered a bad practice. But it can be helpful to
-use them in leagcy projets with a lot messy code and long relative imports.
+According to the author of NestJs, using absolute imports with `src` included is not recommended
+and is considered a bad practice. But it can be helpful to use them in leagcy projets with a lot
+of messy code and long relative imports.
+
+## Select tests to run
+
+Sometimes, you may want to run specific tests inside a file or folder.
+
+This [article](https://www.browserstack.com/guide/jest-run-specific-tests) presents some tips to achieve that.
