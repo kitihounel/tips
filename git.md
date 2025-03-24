@@ -4,6 +4,7 @@
 - [Undo changes](#undo-changes)
 - [Push only specific commits](#push-only-specific-commits)
 - [Fetch a remote branch](#fetch-a-remote-branch)
+- [Using the stash](#using-the-stash)
 
 ## Beginner guides
 
@@ -136,4 +137,73 @@ You will get an output similar to this:
 ```txt
 branch 'foo-bar-branch' set up to track 'origin/foo-bar-branch'.
 Switched to a new branch 'foo-bar-branch'
+```
+
+# Using the stash
+
+A simple and concise tutorial is available [here](https://www.devroom.io/2008/04/23/git-using-the-stash).
+
+The following sections are taken from the article.
+
+## What is the stash
+
+Git features the stash, which is as much as a good place to store uncommitted changes. When you stash you changes,
+they will be stored, and your working copy will be reverted to HEAD (the last commit revision) of your code.
+
+When you restore your stash, you changes are reapplied and you continue working on your code.
+
+## Stash your current changes
+
+```txt
+$ git stash save <optional message for later reference>
+```
+
+**Example**
+
+```bash
+$ git stash save 'a dummy stash operation'
+```
+
+You will get an output like:
+
+```txt
+Saved working directory and index state On main: a dummy stash operation
+```
+
+## List current stashes
+
+It is possible to have more than one stash. The stash works like a stack. Every time a new stash is saved,
+it's put on top of the stack.
+
+```txt
+$ git stash list
+stash@{0}: On main: a dummy stash operation
+```
+
+The `stash@{0}` is the stash ID, it will be used to restore it later.
+
+The stash ID changes with every stash made. `stash@{0}` refers to the last stash made.
+
+## Apply a stash
+
+```bash
+$ git stash apply stash@{0}
+```
+
+You may notice the stash is still there after you have applied it. You can drop it if you don't need it any more.
+
+```bash
+$ git stash drop stash@{0}
+```
+
+## Apply and remove the last stash saved
+
+```bash
+$ git stash pop
+```
+
+## Wipe all the stashes away
+
+```bash
+$ git stash clear
 ```
