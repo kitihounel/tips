@@ -3,6 +3,7 @@
 - [Beginner guide](#beginner-guides)
 - [Undo changes](#undo-changes)
 - [Push only specific commits](#push-only-specific-commits)
+- [Fetch a remote branch](#fetch-a-remote-branch)
 
 ## Beginner guides
 
@@ -120,3 +121,19 @@ git push origin C:main
 
 - https://coderwall.com/p/hexinq/git-push-up-to-a-certain-commit
 - https://stackoverflow.com/questions/3230074
+
+## Fetch a remote branch
+
+If you need to fetch a remote branch that is not in your local repository,
+use `git switch`.
+
+```bash
+git switch name-of-remote-branch
+```
+
+You will get an output similar to this:
+
+```txt
+branch 'foo-bar-branch' set up to track 'origin/foo-bar-branch'.
+Switched to a new branch 'foo-bar-branch'
+```
