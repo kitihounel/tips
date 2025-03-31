@@ -202,7 +202,7 @@ $ git stash save <optional message for later reference>
 **Example**
 
 ```bash
-$ git stash save 'a dummy stash operation'
+git stash save 'a dummy stash operation'
 ```
 
 You will get an output like:
@@ -217,7 +217,7 @@ It is possible to have more than one stash. The stash works like a stack. Every 
 it's put on top of the stack.
 
 ```txt
-$ git stash list
+git stash list
 stash@{0}: On main: a dummy stash operation
 ```
 
@@ -228,25 +228,25 @@ The stash ID changes with every stash made. `stash@{0}` refers to the last stash
 ## Apply a stash
 
 ```bash
-$ git stash apply stash@{0}
+git stash apply stash@{0}
 ```
 
 You may notice the stash is still there after you have applied it. You can drop it if you don't need it any more.
 
 ```bash
-$ git stash drop stash@{0}
+git stash drop stash@{0}
 ```
 
 ## Apply and remove the last stash saved
 
 ```bash
-$ git stash pop
+git stash pop
 ```
 
 ## Wipe all the stashes away
 
 ```bash
-$ git stash clear
+git stash clear
 ```
 
 ## Search in commit messages
@@ -254,7 +254,7 @@ $ git stash clear
 If you need to search for a commit which messages contains a given text, use:
 
 ```bash
-$ git log --grep='pattern'
+git log --grep='pattern'
 ```
 
 **Note:** This will only search in the history of the active branch.

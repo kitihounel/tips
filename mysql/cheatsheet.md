@@ -27,7 +27,7 @@ The content of this document comes from [devhints](https://devhints.io). The Git
 ```bash
 # Host (-h) and port (-p) are optional and default to the values below.
 # The -p option triggers password prompt.
-$ mysql -h localhost -P 3306 -u username -p dbname
+mysql -h localhost -P 3306 -u username -p dbname
 ```
 
 ## Browsing
@@ -274,22 +274,22 @@ ENUM ('value1', 'value2', ...) -- (default NULL, or '' if NOT NULL)
 
 ```bash
 # Stop the server
-$ /etc/init.d/mysql stop
+/etc/init.d/mysql stop
 ```
 
 ```bash
 # Safely starts the server
-$ mysqld_safe --skip-grant-tables
+mysqld_safe --skip-grant-tables
 ```
 
 ```bash
-$ mysql # on another terminal
+mysql # on another terminal
 mysql> UPDATE mysql.user SET password=PASSWORD('new_pass') WHERE user='root';
 ```
 
 ```bash
 # Switch back to the mysqld_safe terminal and kill the process using Control + \
-$ /etc/init.d/mysql start
+/etc/init.d/mysql start
 ```
 
 Your commands may vary depending on your OS.
