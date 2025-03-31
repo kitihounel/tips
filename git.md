@@ -3,6 +3,7 @@
 - [Beginner guide](#beginner-guides)
 - [Undo changes](#undo-changes)
 - [Push only specific commits](#push-only-specific-commits)
+- [Copy file from another commit or branch](#copy-file-from-another-commit-or-branch)
 - [Fetch a remote branch](#fetch-a-remote-branch)
 - [Using the stash](#using-the-stash)
 - [Search in commit messages](#search-in-commit-messages)
@@ -123,6 +124,45 @@ git push origin C:main
 
 - https://coderwall.com/p/hexinq/git-push-up-to-a-certain-commit
 - https://stackoverflow.com/questions/3230074
+
+## Copy file from another commit or branch
+
+There are two options to perform this: using `git checkout` or `git restore`.
+
+**Source:** [StackOverflow](https://stackoverflow.com/questions/307579).
+
+### Using git restore
+
+```sh
+git restore --source otherbranch path/to/myfile.txt
+```
+
+The difference with `git checkout` (see below) is that `git checkout` copies the file to the working directory
+(your files on disk) but also to the staging area (much like a `git add`). `git checkout` by default changes
+only the working directory.
+
+### Using git checkout
+
+Run this from the branch where you want the file to end up:
+
+```sh
+git checkout otherbranch myfile.txt
+```
+
+General formulas:
+
+```txt
+git checkout <commit_hash> <relative_path_to_file_or_dir>
+git checkout <remote_name>/<branch_name> <file_or_dir>
+```
+
+Some notes (from comments in the SO thread):
+
+- Using the commit hash, you can pull files from any commit.
+- This works for files and directories.
+- Overwrites the file `myfile.txt` and `mydir`.
+- Wildcards don't work, but relative paths do.
+- Multiple paths can be specified.
 
 ## Fetch a remote branch
 
