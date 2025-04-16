@@ -1,8 +1,22 @@
 # Errors
 
+- [Creating errors](#creating-errors)
 - [Defining custom errors](#defining-custom-errors)
 - [Error cause](#error-cause-property)
 - [Providing structured data as the error cause](#providing-structured-data-as-the-error-cause)
+
+## Creating errors
+
+`Error()` can be called with or without `new`. Both create a new `Error` instance.
+
+```js
+const x = Error('I was created using a function call!');
+
+// Above has the same functionality as following:
+const y = new Error('I was constructed via the "new" keyword!');
+```
+
+Read more on [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/Error).
 
 ## Defining custom errors
 
@@ -11,7 +25,7 @@ This is the recommended way to subclass `Error` (and some other types like `Arra
 ```typescript
 class CustomError extends Error {
   constructor(message: string) {
-    super(message);
+    super(message, options);
     this.name = 'CustomError';
     Object.setPrototypeOf(this, CustomError.prototype); // This is required to maintain the correct prototype chain
   }
