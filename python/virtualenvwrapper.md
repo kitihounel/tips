@@ -66,6 +66,7 @@ You are done. Enjoy using your tool.
 
 ## Available Commands
 
+- `mkvirtualenv <name of environment>` - Create a new virtual environment
 - `deactivate` - Exit out of the current Python virtual environment
 - `workon` - List available virtual environments
 - `workon <name of environment>` - Activate the specified Python virtual environment
