@@ -1,5 +1,17 @@
 # TypeScript tips
 
+- [Coding guidelines](#coding-guidelines)
+- [Decorators](#decorators)
+- [Compiler options related to path aliases](#compiler-options-related-to-path-aliases)
+
+## Coding guidelines
+
+- [Clean code for TypeScript](https://github.com/labs42io/clean-code-typescript)
+
+## Decorators
+
+- Series of [articles](https://www.wolksoftware.com/blog/decorators-reflection-javascript-typescript) on decorators and metadata.
+
 ## Compiler options related to path aliases
 
 The content under this section is copied from TSConfig reference [page](https://www.typescriptlang.org/tsconfig). 
