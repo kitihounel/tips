@@ -42,7 +42,7 @@ or
 echo -en '\n' 
 ```
 
-The `-e` option enbales the of backslash escapes.
+The `-e` option enbales interpretation of backslash escapes.
 
 By default, `echo` outputs a trailing newline. You can disable this behaviour with the `-n` option.
 
