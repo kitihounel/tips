@@ -8,7 +8,7 @@
 
 If we leave edge cases to one side, the difference is simple. Ctrl+C aborts the application almost immediately while Control+Z shunts it into the background, suspended.
 
-The shell send different signals to the underlying applications on these combinations:
+The shell sends different signals to the underlying applications on these combinations:
 
 - `Ctrl+C` (control character **intr**) sends SIGINT which will interrupt the application. Usually causing it to abort, but this is up to the application to decide.
 
