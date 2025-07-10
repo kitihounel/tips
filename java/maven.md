@@ -1,4 +1,4 @@
-# Apache Mavven tips
+# Apache Maven tips
 
 - [Create a simple project](#create-a-simple-project)
 
