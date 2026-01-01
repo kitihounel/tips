@@ -25,9 +25,18 @@ The content of this document comes from [devhints](https://devhints.io). The Git
 ## Connect to Server
 
 ```bash
-# Host (-h) and port (-p) are optional and default to the values below.
+# Host (-h) and port (-P) are optional and default to the values below.
 # The -p option triggers password prompt.
 mysql -h localhost -P 3306 -u username -p dbname
+```
+
+### Force the MySQL client to use TCP
+
+To force MySQL to use a TCP/IP connection instead of a socket when connecting to the local machine, you must specify
+the hostname as the IP address `127.0.0.1` or use the `--protocol=tcp` option.
+
+```sh
+mysql --protocol=tcp -h localhost -u username -p
 ```
 
 ## Browsing
