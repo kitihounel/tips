@@ -23,6 +23,12 @@
 
 ## zip
 
+- Create an archive from a folder:
+
+  ```sh
+  zip -r archive-name.zip folder-name
+  ```
+
 - List the content of an archive:
 
   ```sh
