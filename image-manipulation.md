@@ -2,7 +2,7 @@
 
 - [Make image background transparent](#make-image-background-transparent)
 - [Resize an image](#resize-an-image)
-- [Get image info]
+- [Get image info](#get-image-info)
 
 ## Make image background transparent
 
