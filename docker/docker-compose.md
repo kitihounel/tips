@@ -1,9 +1,28 @@
 # docker-compose
 
-- [Restart containers after changes in configuration](#restart-containers-after-changes-in-configuration)
+- [List all compose projects](#list-all-compose-projects)
+- [List all services in a project](#list-all-services-in-a-project)
+- [Restart containers after changes in config](#restart-containers-after-changes-in-config)
 - [Remove volumes to avoid silly problems](#remove-volumes-to-avoid-silly-problems)
 
-## Restart containers after changes in configuration
+## List all compose projects
+
+```sh
+docker compose ls --all
+```
+
+The `-a` or `--all` flag forces the command to include stopped projects in the output.
+
+## List all services in a project
+
+To view a list of all service names defined in the current compose config file
+without showing container states, use the `config` command:
+
+```sh
+docker compose config --services
+```
+
+## Restart containers after changes in config
 
 Use the `--build` option of `docker compose up`.
 
